@@ -22,5 +22,5 @@ jobs:
         run: docker build -t pafare-backend .
 
       - name: Login in to AWS ECR
-        uses: aws-actions/amazon-ecr-loginv2
+        uses: aws-actions/amazon-ecr-login@v2
 
