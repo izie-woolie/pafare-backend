@@ -23,4 +23,8 @@ jobs:
 
       - name: Login in to AWS ECR
         uses: aws-actions/amazon-ecr-login@v2
+        with:
+          region: ${{ secrets.REGION }}
+          access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret-access-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
 
